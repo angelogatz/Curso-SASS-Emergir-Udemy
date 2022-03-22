@@ -1,0 +1,90 @@
+.btn {
+  background-color: #d5d5d5;
+  color: #000;
+  padding: 12px 10px;
+  border-radius: 5px;
+}
+
+.esp-medio, .esp-menor {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 20px;
+}
+
+.p-esp {
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  border: 5px solid red;
+  transition: 0.3s;
+}
+.p-esp:hover {
+  background-color: black;
+  transition: 0.3s;
+}
+
+h2 {
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  border: 5px solid red;
+  transition: 0.3s;
+  border-color: green;
+  color: green;
+}
+h2:hover {
+  background-color: black;
+  transition: 0.3s;
+}
+
+.esp-menor {
+  padding: 10px;
+  margin: 10px;
+  /* REGRA */
+  border: 1px solid red;
+  color: #000;
+  background-color: #fff;
+}
+
+.esp-medio {
+  padding: 15px;
+  margin: 15px;
+  /* REGRA */
+  border: 4px dotted #fff;
+  color: #fff;
+  background-color: #321;
+}
+
+.esp-maior {
+  padding: 25px;
+  margin: 25px;
+  /* REGRA */
+  border: 7px solid green;
+}
+
+.esp-maior-ainda {
+  padding: 50px;
+  margin: 50px;
+  /* REGRA */
+  border: 1px solid gold;
+  color: gold;
+  background-color: red;
+}
+
+.container-menor {
+  width: 600px;
+  border: 1px solid orange;
+  color: #000;
+  background-color: #fff;
+}
+
+.container-maior {
+  border: 1px solid green;
+  width: 100rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
