@@ -77,7 +77,7 @@ h2:hover {
 
 .container-menor {
   width: 600px;
-  border: 1px solid orange;
+  border: 2px solid green;
   color: #000;
   background-color: #fff;
 }
@@ -85,6 +85,33 @@ h2:hover {
 .container-maior {
   border: 1px solid green;
   width: 100rem;
+  border: 2px solid green;
+}
+
+.font-pequeno {
+  font-size: 5px;
+  color: blue;
+  border: 3px dotted gold;
+}
+
+.teste-1 {
+  padding: 20px;
+  background-color: blue;
+}
+
+.title-40px {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.title-60px {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.title-100px {
+  font-size: 100px;
+  line-height: 120px;
 }
 
 /*# sourceMappingURL=styles.css.map */

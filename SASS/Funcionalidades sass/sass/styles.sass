@@ -1,7 +1,9 @@
+@charset "UTF-8"
 @import _variables
 @import _button
 @import _mixins
 @import _pluggins
+@import _functions
 body
     margin: 20px
 
@@ -42,7 +44,7 @@ $medida: 4
 
 .container-menor
     width: 100px * ($medida + 2)
-    @include custom-border(solid, orange)
+    border: custom-border-function(2)
     @include colors
     
 
@@ -50,3 +52,21 @@ $medida: 4
 .container-maior
     @include custom-border(solid, green)  //não colocar argumentos opcionais à esquerda
     width: 25rem * $medida
+    border: custom-border-function(2)
+
+.font-pequeno
+    font-size: 5px
+    color: text-color(5)
+    border: custom-border-function(3)
+
+.teste-1
+    padding: 20px
+    background-color: calc-func(1, 10)
+
+
+$fonts: 40px, 60px, 100px
+
+@each $font in $fonts
+    .title-#{$font}
+        font-size: $font
+        line-height: $font * 1.2
