@@ -1,0 +1,127 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+
+.footer
+    background-color: variables.$bg-color
+    padding: 3rem 
+    margin-top: 3rem
+
+    @include base-mixins.mobile
+        padding: 3rem
+
+    a, p
+        color: variables.$gray-text-color
+
+
+    li, p
+        margin-bottom: 1rem
+
+
+        a
+            &:hover
+                color: variables.$primary-color
+
+    i
+        margin-right: .3rem
+
+    &-top
+        display: flex
+        justify-content: space-between
+        margin-bottom: 3.5rem
+
+        @include base-mixins.mobile
+            flex-direction: column
+            text-align: center
+
+        &-about
+            width: 25%
+
+            @include base-mixins.mobile
+                width: 100%
+                margin-bottom: 1rem
+
+            h3
+                font-size: 2rem
+                color: variables.$light-color
+                text-transform: uppercase
+                margin-bottom: 1rem
+
+            p
+                font-size: 1rem
+                text-align: left
+
+                @include base-mixins.mobile
+                    text-align: center
+
+        &-categories
+
+            @include base-mixins.mobile
+                width: 100%
+                margin-bottom: 1rem
+            h3
+                font-size: 2rem
+                color: variables.$light-color
+                text-transform: uppercase
+                margin-bottom: 1rem
+
+            p
+                font-size: 1rem
+                text-align: left
+
+        &-information
+
+            @include base-mixins.mobile
+                width: 100%
+                margin-bottom: 1rem
+            h3
+                font-size: 2rem
+                color: variables.$light-color
+                text-transform: uppercase
+                margin-bottom: 1rem
+
+            p
+                font-size: 1rem
+                text-align: left
+
+        &-menu
+
+            @include base-mixins.mobile
+                width: 100%
+                margin-bottom: 1rem
+            h3
+                font-size: 2rem
+                color: variables.$light-color
+                text-transform: uppercase
+                margin-bottom: 1rem
+
+            p
+                font-size: 1rem
+                text-align: left
+
+    &-bottom
+        @include layouts-mixins.center-content
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        
+
+        i
+            font-size: 3rem
+            margin: 5px
+        
+        &-payments
+            margin-bottom: 2rem
+            
+            i
+                color: variables.$secondary-bg-color
+                transition: .3s
+                cursor: pointer
+
+                &:hover
+                    color: variables.$primary-color
+                    transition: .3s
+            
+
+            

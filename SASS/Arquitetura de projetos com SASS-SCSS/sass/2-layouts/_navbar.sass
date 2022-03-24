@@ -1,0 +1,26 @@
+@use '../1-base/variables'
+    
+#navbar
+    border-bottom: 1px solid #fff
+    margin-bottom: 15px
+    padding: 25px
+
+    ul
+        display: flex
+        justify-content: flex-end
+        
+
+        li
+            margin: 0 10px
+            
+            a
+                color: variables.$text-color
+                transition: .3s
+
+                &:hover
+                    border: 1px solid orange
+                    background-color: orange
+                    color: #000
+                    border-radius: 2px
+                    transition: .3s
+                    
